@@ -25,7 +25,7 @@ import re
 one_file_fws = [
 	#'01_adc_logger_slow.cpp',
 	'10_adc_cycle.cpp',
-	'11_rtc.cpp'
+	'11_adc_rtc_sdcard.cpp'
 ]
 
 
