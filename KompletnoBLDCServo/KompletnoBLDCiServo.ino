@@ -83,24 +83,10 @@ static void set_eff(i8 eff) {
 ISR(TIMER2_COMPA_vect) {}
 
 static i8 eff = EFF_START;
-static float C_rpm;
 
 Servo servo;
 static int servo_angle = 90; // centar
  
-u8 read_id() {
-  pinMode(A5, OUTPUT);
-  digitalWrite(A5, 0);
-  for(i8 pin = A4; pin >= A0; pin--){
-    pinMode(pin, INPUT_PULLUP);
-  }
-  u8 id = 0;
-  for(i8 pin = A4; pin >= A0; pin--){
-    id <<= 1;
-    id |= !digitalRead(pin);
-  }
-  return id;
-}
 
 bool sensor_active = false;
 
@@ -117,16 +103,8 @@ void setup() {
   pinMode(BTN_DEC, INPUT_PULLUP);
   pinMode(BTN_INC, INPUT_PULLUP);
 
-  u8 id = read_id();
-  if(id < 3){
-    pinMode(PG, INPUT_PULLUP);
-    C_rpm = float(60)*1000/6;
-  }else{
-    pinMode(PG, INPUT);
-    C_rpm = float(60)*1000/9;
-  }
 
-  attachInterrupt(digitalPinToInterrupt(PG), pos_pulse, RISING);
+ attachInterrupt(digitalPinToInterrupt(PG), pos_pulse, RISING);
 
   pinMode(DIR, OUTPUT);
   set_dir(CW);
@@ -221,11 +199,9 @@ else{
   pulses_t dp = curr_pos - prev_pos;
   millis_t dt = curr_t - prev_t;
 
-  int rpm = C_rpm * dp / dt;
+  
   Serial.print(pos);
   Serial.print(" cnt\t");
-  Serial.print(rpm);
-  Serial.print(" rpm\t");
   Serial.print("Servo: ");
   Serial.print(servo_angle);
   Serial.println(" deg");
