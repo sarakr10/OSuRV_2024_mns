@@ -5,252 +5,6 @@
 	(uuid "62dd8c0c-590b-4978-9daf-53008d9cefd2")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Conn_01x04_Socket_1"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J4"
-				(at 5.08 -1.27 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x04_Socket"
-				(at 2.54 -1.27 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x04, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x04_Socket_1_1_1"
-				(arc
-					(start 0 -4.572)
-					(mid -0.5058 -5.08)
-					(end 0 -5.588)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 3.048)
-					(mid -0.5058 2.54)
-					(end 0 2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "Echo"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "Trig"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "Vcc"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Barrel_Jack_Switch"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -662,6 +416,252 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector:Conn_01x04_Socket"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x04_Socket"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x04, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x04_Socket_1_1"
+				(arc
+					(start 0 -4.572)
+					(mid -0.5058 -5.08)
+					(end 0 -5.588)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -2.032)
+					(mid -0.5058 -2.54)
+					(end 0 -3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -0.508 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0.508)
+					(mid -0.5058 0)
+					(end 0 -0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 3.048)
+					(mid -0.5058 2.54)
+					(end 0 2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1619,6 +1619,88 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Linear:LM7805_TO220"
 			(pin_names
 				(offset 0.254)
@@ -2377,6 +2459,17 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 101.6) (xy 193.04 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 255 255 1)
+		)
+		(uuid "0079c4d8-db5a-4d98-b4e3-04d4917326c8")
+	)
+	(wire
+		(pts
 			(xy 129.54 86.36) (xy 121.92 86.36)
 		)
 		(stroke
@@ -2397,16 +2490,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 40.64) (xy 231.14 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e227804-7532-48b1-bc26-ec9de0643275")
-	)
-	(wire
-		(pts
 			(xy 111.76 160.02) (xy 111.76 165.1)
 		)
 		(stroke
@@ -2417,18 +2500,17 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 86.36) (xy 260.35 86.36)
+			(xy 210.82 106.68) (xy 218.44 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 255 255 1)
 		)
-		(uuid "10482f46-4e27-474e-9983-ccd43fffd554")
+		(uuid "11932b88-261f-415c-83dc-966ba3cc2ea1")
 	)
 	(wire
 		(pts
-			(xy 185.42 99.06) (xy 193.04 99.06)
+			(xy 160.02 88.9) (xy 152.4 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2438,7 +2520,18 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 134.62) (xy 236.22 140.97)
+			(xy 185.42 104.14) (xy 193.04 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 255 255 1)
+		)
+		(uuid "204a1494-a7d8-435f-9a01-1460d2ad85ab")
+	)
+	(wire
+		(pts
+			(xy 233.68 132.08) (xy 233.68 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2456,6 +2549,16 @@
 			(type default)
 		)
 		(uuid "24d70a18-c176-47c3-9c11-11a26f26111e")
+	)
+	(wire
+		(pts
+			(xy 260.35 83.82) (xy 269.24 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b826922-55f6-460e-a00d-76d3ac9aed8b")
 	)
 	(wire
 		(pts
@@ -2509,7 +2612,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 96.52) (xy 193.04 96.52)
+			(xy 160.02 91.44) (xy 152.4 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2519,7 +2622,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 93.98) (xy 193.04 93.98)
+			(xy 185.42 106.68) (xy 193.04 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2530,14 +2633,13 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 40.64) (xy 233.68 48.26)
+			(xy 210.82 119.38) (xy 218.44 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
-			(color 0 255 255 1)
 		)
-		(uuid "50f884aa-111e-4d6d-a793-1cbe872f3ae1")
+		(uuid "55d9f0b9-c4ec-400a-9b76-ef44c6311e19")
 	)
 	(wire
 		(pts
@@ -2561,6 +2663,26 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 46.99) (xy 238.76 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61ff87e7-d8ec-4b8e-abdf-4b9f2531f095")
+	)
+	(wire
+		(pts
+			(xy 228.6 93.98) (xy 231.14 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f8d3db0-0ecf-4acc-bc1e-56d7ac2ad653")
+	)
+	(wire
+		(pts
 			(xy 152.4 81.28) (xy 160.02 81.28)
 		)
 		(stroke
@@ -2571,6 +2693,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 93.98) (xy 218.44 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "803b9c62-5633-4c5d-80a8-3519b3030535")
+	)
+	(wire
+		(pts
 			(xy 152.4 86.36) (xy 160.02 86.36)
 		)
 		(stroke
@@ -2578,6 +2710,37 @@
 			(type default)
 		)
 		(uuid "85b00d2d-75d0-4bb2-9939-4110f7567d8c")
+	)
+	(wire
+		(pts
+			(xy 231.14 48.26) (xy 231.14 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fc344d4-ff05-407a-af08-29d28d2abec1")
+	)
+	(wire
+		(pts
+			(xy 228.6 81.28) (xy 231.14 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9305c0d4-0274-4bcf-b967-802aa1685cd9")
+	)
+	(wire
+		(pts
+			(xy 236.22 48.26) (xy 236.22 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 255 255 1)
+		)
+		(uuid "961e63d0-6d0a-4770-b86d-6c66c3eaaed1")
 	)
 	(wire
 		(pts
@@ -2601,27 +2764,6 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 83.82) (xy 260.35 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 255 255 1)
-		)
-		(uuid "9b772172-7bce-48d7-9ea2-f62efaaed9e9")
-	)
-	(wire
-		(pts
-			(xy 267.97 81.28) (xy 260.35 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ba3f35f-8cf5-4602-9ca1-61f69f26a045")
-	)
-	(wire
-		(pts
 			(xy 152.4 83.82) (xy 160.02 83.82)
 		)
 		(stroke
@@ -2629,6 +2771,16 @@
 			(type default)
 		)
 		(uuid "9c637100-b99d-49cb-90e7-b672c9173e3e")
+	)
+	(wire
+		(pts
+			(xy 193.04 91.44) (xy 185.42 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc0bb5c-46d8-4342-abc0-316a03f6f749")
 	)
 	(wire
 		(pts
@@ -2642,18 +2794,18 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 40.64) (xy 236.22 48.26)
+			(xy 233.68 48.26) (xy 233.68 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 			(color 0 255 255 1)
 		)
-		(uuid "a54cfbde-55d8-4682-b4b1-a6fc7f94cece")
+		(uuid "a3c423bf-6ceb-4002-8584-a9be7bb06c92")
 	)
 	(wire
 		(pts
-			(xy 185.42 91.44) (xy 193.04 91.44)
+			(xy 185.42 109.22) (xy 193.04 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2661,6 +2813,27 @@
 			(color 0 255 255 1)
 		)
 		(uuid "a85d8763-3de0-4bb8-a676-6501a7ae8763")
+	)
+	(wire
+		(pts
+			(xy 210.82 81.28) (xy 218.44 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0c4e02a-d6df-4e70-8ad5-da9322b98f90")
+	)
+	(wire
+		(pts
+			(xy 260.35 86.36) (xy 269.24 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 255 255 1)
+		)
+		(uuid "b58fa718-3d7d-4bdf-9f8b-db71791ca91e")
 	)
 	(wire
 		(pts
@@ -2674,6 +2847,36 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 93.98) (xy 185.42 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd751fd0-1da1-4e11-a96b-c7868536b62c")
+	)
+	(wire
+		(pts
+			(xy 228.6 119.38) (xy 231.14 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bff640b8-a735-4760-83ee-485ceb481160")
+	)
+	(wire
+		(pts
+			(xy 152.4 109.22) (xy 160.02 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c06a6840-041a-4623-9d2d-25d066baf5ba")
+	)
+	(wire
+		(pts
 			(xy 152.4 78.74) (xy 160.02 78.74)
 		)
 		(stroke
@@ -2681,6 +2884,16 @@
 			(type default)
 		)
 		(uuid "c7d1a368-d1f0-4bcd-9a7a-2e0bc1be256e")
+	)
+	(wire
+		(pts
+			(xy 228.6 106.68) (xy 231.14 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c83dc197-6056-4e4a-8502-57ca6e88bb5b")
 	)
 	(wire
 		(pts
@@ -2704,13 +2917,33 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 133.35) (xy 238.76 140.97)
+			(xy 261.62 91.44) (xy 269.24 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb5523ef-40e8-402d-82aa-9aa58852959d")
+	)
+	(wire
+		(pts
+			(xy 231.14 133.35) (xy 231.14 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cddbe486-80f2-4847-8893-3867ee3f09bf")
+	)
+	(wire
+		(pts
+			(xy 193.04 96.52) (xy 185.42 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce10bad9-17d0-4372-8607-c044c2a5bc90")
 	)
 	(wire
 		(pts
@@ -2724,27 +2957,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 43.18) (xy 238.76 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dac54354-d621-4556-94be-3c87e164f0bb")
-	)
-	(wire
-		(pts
-			(xy 265.43 88.9) (xy 267.97 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "daf7bb81-b2e1-4d5b-bab1-3eabab0a5438")
-	)
-	(wire
-		(pts
-			(xy 231.14 138.43) (xy 231.14 140.97)
+			(xy 238.76 132.08) (xy 238.76 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2754,7 +2967,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 134.62) (xy 233.68 140.97)
+			(xy 236.22 132.08) (xy 236.22 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2762,6 +2975,17 @@
 			(color 0 255 255 1)
 		)
 		(uuid "f04c5c24-61b6-4628-97e5-1cf7fb7054d6")
+	)
+	(wire
+		(pts
+			(xy 260.35 88.9) (xy 269.24 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 255 255 1)
+		)
+		(uuid "f1e4f9d2-d7ce-447b-bcb6-f93d4dd47e1b")
 	)
 	(wire
 		(pts
@@ -2773,7 +2997,7 @@
 		)
 		(uuid "f553375a-d6e1-4942-b356-efdc50d9582a")
 	)
-	(label "ECHO_1"
+	(label "TRIG_1"
 		(at 233.68 48.26 90)
 		(effects
 			(font
@@ -2781,17 +3005,27 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0b958f3c-c12b-409e-b533-b5512f53c8bc")
+		(uuid "0367fac0-2b64-4a7a-95f0-9aef4311e6f6")
 	)
 	(label "TRIG_2"
-		(at 193.04 99.06 180)
+		(at 152.4 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1527bbc7-ff07-419b-aa46-efad14f22970")
+	)
+	(label "TRIG_1"
+		(at 193.04 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "1527bbc7-ff07-419b-aa46-efad14f22970")
+		(uuid "2e949719-5678-4c57-ad86-ea265c94e2a0")
 	)
 	(label "PWM"
 		(at 152.4 81.28 0)
@@ -2803,8 +3037,18 @@
 		)
 		(uuid "30994fb2-66d4-4d4b-b2e0-a11ce7381aad")
 	)
-	(label "ECHO_0"
+	(label "PB0"
 		(at 193.04 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "32b66fd9-04fd-4067-be7d-cf6f6aafd64f")
+	)
+	(label "ECHO_0"
+		(at 193.04 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2813,15 +3057,15 @@
 		)
 		(uuid "35accac1-16d1-4606-b124-6591fa91027f")
 	)
-	(label "TRIG_1"
-		(at 236.22 48.26 90)
+	(label "PB2"
+		(at 193.04 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "39b4c0e7-4fa5-4ea4-bd34-8ada05ec8f8d")
+		(uuid "489ae5b7-2a8f-4253-a9ca-ff0cc182a36c")
 	)
 	(label "STEER_PWM"
 		(at 148.59 93.98 0)
@@ -2832,6 +3076,16 @@
 			(justify left bottom)
 		)
 		(uuid "4d78962a-0a5e-419a-8db0-f2e4591a82d4")
+	)
+	(label "PB3"
+		(at 210.82 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55725ac1-6794-4c6a-bd7b-1ae30749857f")
 	)
 	(label "BREAK"
 		(at 152.4 86.36 0)
@@ -2863,13 +3117,23 @@
 		)
 		(uuid "6b42b418-097b-48f1-9365-5d3801b2306f")
 	)
-	(label "ECHO_2"
-		(at 236.22 140.97 90)
+	(label "PB3"
+		(at 152.4 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
+		)
+		(uuid "80e8c4e6-c841-4765-950d-852a9cacc52f")
+	)
+	(label "ECHO_2"
+		(at 233.68 132.08 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
 		(uuid "8814f9fc-bbca-45dc-968b-7b6ab420668d")
 	)
@@ -2884,12 +3148,12 @@
 		(uuid "8ff2c334-7195-484b-bea5-6654d8a3c14d")
 	)
 	(label "ECHO_2"
-		(at 193.04 96.52 180)
+		(at 152.4 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "91f6ec61-ab54-4846-9d1d-8eddee2a28a3")
 	)
@@ -2904,24 +3168,34 @@
 		(uuid "945b3206-3d1b-4455-8aa4-3f9ff39fb1ff")
 	)
 	(label "TRIG_2"
-		(at 233.68 140.97 90)
+		(at 236.22 132.08 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "96816c3b-37c6-49ad-80b1-5adf1663d835")
 	)
-	(label "TRIG_0"
-		(at 260.35 86.36 0)
+	(label "PB1"
+		(at 193.04 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "99f6bf55-7fb5-4772-b315-6d02fbcabb50")
+	)
+	(label "ECHO_0"
+		(at 260.35 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "b069b4d1-9715-44c1-9874-d47477806318")
+		(uuid "b7a47f13-0348-4870-9493-9d4e51cc3fb8")
 	)
 	(label "DIR"
 		(at 152.4 83.82 0)
@@ -2933,6 +3207,26 @@
 		)
 		(uuid "beeece00-077d-488e-9233-43dac73cfc2b")
 	)
+	(label "PB2"
+		(at 210.82 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c01cdfb3-dcf8-4a6e-bda2-09fe0902b703")
+	)
+	(label "ECHO_1"
+		(at 193.04 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c3238cf4-7d25-4986-a52c-2cdf5d0b9a68")
+	)
 	(label "STEER_PWM"
 		(at 114.3 153.67 270)
 		(effects
@@ -2943,18 +3237,38 @@
 		)
 		(uuid "c4a0c44a-1537-4d1a-af31-1b993fbe2ae2")
 	)
-	(label "ECHO_0"
-		(at 260.35 83.82 0)
+	(label "ECHO_1"
+		(at 236.22 48.26 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "c96cb3f2-46f4-4fc6-a516-4bf5da2a92c6")
+		(uuid "c9b4ec8e-1ed1-49ce-8441-d37fcb108339")
 	)
 	(label "TRIG_0"
-		(at 193.04 93.98 180)
+		(at 260.35 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cdf15e77-0ab1-43de-93de-f1424c867502")
+	)
+	(label "PB1"
+		(at 210.82 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dad4b062-f3da-47a3-8f65-a163f612f4a3")
+	)
+	(label "TRIG_0"
+		(at 193.04 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2962,6 +3276,16 @@
 			(justify right bottom)
 		)
 		(uuid "e0b0055b-61d0-4b4a-89d4-1b1ee24b9e0e")
+	)
+	(label "PB0"
+		(at 210.82 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e172ba30-c13a-41eb-8865-c239bf2c4a77")
 	)
 	(label "FG"
 		(at 152.4 78.74 0)
@@ -2972,6 +3296,80 @@
 			(justify left bottom)
 		)
 		(uuid "e394fb80-0236-436e-9541-2c35ceb4d18a")
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 274.32 88.9 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1160a931-fdb0-4532-88d1-c84a202383e5")
+		(property "Reference" "J7"
+			(at 276.86 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1x4 2.54mm female"
+			(at 279.4 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 274.32 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 274.32 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 274.32 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "5e0956f6-0d58-45f9-8106-e5f0a59e263a")
+		)
+		(pin "1"
+			(uuid "94dcdd20-faec-47db-a48b-d2590e525fa8")
+		)
+		(pin "4"
+			(uuid "fb798092-d352-48a6-974c-1aefa0dc2bba")
+		)
+		(pin "2"
+			(uuid "436258c8-845e-4b6c-a8d3-2aef95e268b7")
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3040,17 +3438,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 231.14 43.18 0)
+		(lib_id "power:+5V")
+		(at 260.35 83.82 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "219ffa7c-fbbb-45ce-9cfc-3ef887477aa5")
-		(property "Reference" "#PWR14"
-			(at 231.14 49.53 0)
+		(uuid "1b169d24-8da3-4f20-8dbd-7dadd6fac225")
+		(property "Reference" "#PWR20"
+			(at 264.16 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3058,8 +3456,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 231.14 48.26 0)
+		(property "Value" "+5V"
+			(at 255.27 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3067,7 +3465,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 231.14 43.18 0)
+			(at 260.35 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3076,7 +3474,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 43.18 0)
+			(at 260.35 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3084,8 +3482,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 231.14 43.18 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 260.35 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3094,12 +3492,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1f4bcc32-4166-4ebf-a78b-67297a6939eb")
+			(uuid "4b518624-6c6c-46ae-bbe6-a7713141362a")
 		)
 		(instances
-			(project ""
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
 				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
-					(reference "#PWR14")
+					(reference "#PWR20")
 					(unit 1)
 				)
 			)
@@ -3185,6 +3583,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 231.14 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e7804ad-85ea-4419-80ca-991c41157098")
+		(property "Reference" "#PWR14"
+			(at 237.49 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 93.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 231.14 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a74eab19-7962-41d1-a57b-ba7f73a88f2e")
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "#PWR14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 86.36 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3250,27 +3715,25 @@
 		)
 	)
 	(symbol
-		(lib_name "Conn_01x04_Socket_1")
 		(lib_id "Connector:Conn_01x04_Socket")
-		(at 233.68 35.56 90)
+		(at 236.22 34.29 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33febb20-4b7c-476d-8cb4-c4d7c92cdb3e")
-		(property "Reference" "J4"
-			(at 234.95 30.48 90)
+		(uuid "322687b4-43dc-403f-8485-df8595ec5b0d")
+		(property "Reference" "J2"
+			(at 234.95 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "Conn_01x04_Socket"
-			(at 234.95 33.02 90)
+		(property "Value" "1x4 2.54mm female"
+			(at 234.95 29.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3278,7 +3741,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 233.68 35.56 0)
+			(at 236.22 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3287,7 +3750,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 35.56 0)
+			(at 236.22 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3296,7 +3759,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 233.68 35.56 0)
+			(at 236.22 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3304,60 +3767,39 @@
 				(hide yes)
 			)
 		)
-		(pin "Vcc"
-			(uuid "7ab78a11-1c98-4201-a97f-00f2de880c83")
+		(pin "3"
+			(uuid "eb7afb2e-5130-4f50-875e-ef4dea114be1")
 		)
-		(pin "Echo"
-			(uuid "afe7e7f4-414c-4179-b910-9fe4ee1e7e2e")
+		(pin "1"
+			(uuid "1d3b37f9-81fe-4f63-a5b1-5d3abef70ba9")
 		)
-		(pin "Trig"
-			(uuid "a5563829-cbe4-4360-b7cf-71ceecb87350")
+		(pin "4"
+			(uuid "8ed690bb-5f12-4abf-b6ff-e703b9100a6d")
 		)
-		(pin "GND"
-			(uuid "008e6646-f223-4cbf-a088-5a4fcb634e69")
+		(pin "2"
+			(uuid "55e4fd90-12df-4afd-b620-be8cdb6c2e1c")
 		)
 		(instances
-			(project ""
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
 				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
-					(reference "J4")
+					(reference "J2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "Conn_01x04_Socket_1")
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 273.05 83.82 0)
+		(lib_id "power:GND")
+		(at 231.14 119.38 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3bf2e039-0fdc-42d5-9db7-0d13b87606c2")
-		(property "Reference" "J2"
-			(at 274.32 83.8199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "Conn_01x04_Socket"
-			(at 274.32 86.3599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 273.05 83.82 0)
+		(uuid "3852a6f1-d84f-47b0-8bc2-82d09429eefd")
+		(property "Reference" "#PWR22"
+			(at 237.49 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3365,8 +3807,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 273.05 83.82 0)
+		(property "Value" "GND"
+			(at 234.95 119.3799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3374,8 +3825,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 273.05 83.82 0)
+		(property "Datasheet" ""
+			(at 231.14 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3383,22 +3834,22 @@
 				(hide yes)
 			)
 		)
-		(pin "Vcc"
-			(uuid "964b5278-5bca-4806-ba15-03f3de1b2340")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 231.14 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "Echo"
-			(uuid "7188c660-a2c2-4a92-b6f3-b0b8213def14")
-		)
-		(pin "Trig"
-			(uuid "b1436906-181a-4447-843f-42a3c2b2596b")
-		)
-		(pin "GND"
-			(uuid "5c579b7c-a490-4509-960b-d5b9475bac31")
+		(pin "1"
+			(uuid "cb1df118-2345-41d0-9e68-bb229d8f5ae7")
 		)
 		(instances
-			(project "sema"
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
 				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
-					(reference "J2")
+					(reference "#PWR22")
 					(unit 1)
 				)
 			)
@@ -3472,82 +3923,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Conn_01x04_Socket_1")
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 236.22 146.05 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "47ad41bd-36e3-4c81-81ac-2b1152da33d0")
-		(property "Reference" "J1"
-			(at 234.95 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x04_Socket"
-			(at 234.95 151.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 236.22 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 236.22 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "Vcc"
-			(uuid "e3911ed3-b9f4-447d-92e0-9e528f902cb9")
-		)
-		(pin "Echo"
-			(uuid "92b480b7-9011-44dc-8f02-f6e7b936f0ca")
-		)
-		(pin "Trig"
-			(uuid "983204a8-61e6-4b27-8638-b6977ce3236d")
-		)
-		(pin "GND"
-			(uuid "2025bb32-0e4e-42e3-af83-94b277c29514")
-		)
-		(instances
-			(project "sema"
-				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 109.22 163.83 180)
 		(unit 1)
@@ -3615,72 +3990,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 260.35 81.28 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5429a3e8-704a-4b82-9c4f-238921988f6b")
-		(property "Reference" "#PWR15"
-			(at 254 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 255.27 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 260.35 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 260.35 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 260.35 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b7d2bf9-e76b-4357-a097-7305ca75d254")
-		)
-		(instances
-			(project "Arduino_Automotive_Ultrasound_Shield_v1"
-				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
-					(reference "#PWR15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 238.76 133.35 180)
+		(at 231.14 133.35 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3688,7 +3999,7 @@
 		(dnp no)
 		(uuid "5be305c3-6232-4380-859d-4073cc16d468")
 		(property "Reference" "#PWR17"
-			(at 238.76 127 0)
+			(at 231.14 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3697,7 +4008,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 238.76 128.27 90)
+			(at 231.14 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3705,7 +4016,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 238.76 133.35 0)
+			(at 231.14 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3714,7 +4025,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 133.35 0)
+			(at 231.14 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3723,7 +4034,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 238.76 133.35 0)
+			(at 231.14 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3745,7 +4056,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 321.31 45.72 0)
+		(at 223.52 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3754,7 +4065,7 @@
 		(fields_autoplaced yes)
 		(uuid "5d982079-a278-48fa-bbd4-d20b258f5a3d")
 		(property "Reference" "SW1"
-			(at 321.31 38.1 0)
+			(at 223.52 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3762,7 +4073,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 321.31 40.64 0)
+			(at 223.52 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3770,7 +4081,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 321.31 40.64 0)
+			(at 223.52 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3779,7 +4090,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 321.31 40.64 0)
+			(at 223.52 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3788,7 +4099,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 321.31 45.72 0)
+			(at 223.52 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4010,17 +4321,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 238.76 43.18 180)
+		(lib_id "Switch:SW_Push")
+		(at 223.52 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7427661c-13a1-45e0-ac43-3f6181945985")
-		(property "Reference" "#PWR12"
-			(at 238.76 39.37 0)
+		(uuid "73630c2f-a217-4620-83f3-fa1d31224d6e")
+		(property "Reference" "SW2"
+			(at 223.52 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 223.52 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+			(at 223.52 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4028,16 +4355,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 238.76 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 238.76 43.18 0)
+		(property "Datasheet" "~"
+			(at 223.52 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4045,8 +4364,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 238.76 43.18 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 223.52 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4054,22 +4373,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 238.76 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "a22c0ba1-b177-4645-9ee0-0584aa724c13")
 		)
 		(pin "1"
-			(uuid "826f4136-0bf3-436b-a4b5-4b56f4493db6")
+			(uuid "91615e60-7030-4f39-8ace-701af4991027")
 		)
 		(instances
 			(project "Arduino_Automotive_Ultrasound_Shield_v1"
 				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
-					(reference "#PWR12")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -4143,6 +4456,204 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 261.62 91.44 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f681471-4e25-4b06-90c8-a7b178635d6c")
+		(property "Reference" "#PWR19"
+			(at 255.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 256.54 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 261.62 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05166256-9904-448c-8838-fb771f173529")
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "#PWR19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 223.52 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8302b3a5-db97-4835-99eb-defa62d6dd2b")
+		(property "Reference" "SW3"
+			(at 223.52 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 223.52 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+			(at 223.52 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 223.52 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5bd41a9b-0cd4-4d9b-be5c-b76d9e0ca9aa")
+		)
+		(pin "1"
+			(uuid "457065b2-b701-4198-8a91-052a0cb1afe4")
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 25.4 151.13 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e1ee5d0-7976-4eb2-a9f0-5275585acf0b")
+		(property "Reference" "H1"
+			(at 27.94 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 27.94 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 25.4 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 25.4 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:Vdrive")
 		(at 99.06 162.56 0)
 		(unit 1)
@@ -4210,7 +4721,8 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 231.14 138.43 0)
+		(at 238.76 132.08 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4218,7 +4730,7 @@
 		(dnp no)
 		(uuid "93561990-b2d9-4690-9a3d-862265cf1359")
 		(property "Reference" "#PWR18"
-			(at 231.14 142.24 0)
+			(at 238.76 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4227,7 +4739,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 231.14 133.35 90)
+			(at 238.76 127 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4235,7 +4747,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 231.14 138.43 0)
+			(at 238.76 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4244,7 +4756,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 138.43 0)
+			(at 238.76 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4253,7 +4765,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 231.14 138.43 0)
+			(at 238.76 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4268,6 +4780,333 @@
 			(project "Arduino_Automotive_Ultrasound_Shield_v1"
 				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
 					(reference "#PWR18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 25.4 144.78 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "984fd82a-9ada-4d8a-b0a5-25360494e7cd")
+		(property "Reference" "H3"
+			(at 27.94 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 27.94 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 25.4 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 25.4 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 231.14 48.26 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98bab9db-34e6-4957-a825-90b68653fe99")
+		(property "Reference" "#PWR15"
+			(at 231.14 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 231.14 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 231.14 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "435c3b6a-84dc-4da1-bde8-d45ae9cba3ab")
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "#PWR15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 238.76 46.99 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9bfd6cc7-e3fe-40a1-a651-70e2dae1140b")
+		(property "Reference" "#PWR16"
+			(at 238.76 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 238.76 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b74ae86-f042-41a7-a429-e6ebc483b8fa")
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "#PWR16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 35.56 144.78 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3c18263-e4b9-4297-8790-e9c82c577e8b")
+		(property "Reference" "H4"
+			(at 38.1 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 38.1 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 35.56 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 35.56 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 231.14 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a746b2fc-9639-4ce1-87a9-51f946c6c14e")
+		(property "Reference" "#PWR12"
+			(at 237.49 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 81.2799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 231.14 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74136191-d86b-40e8-8662-3751238c6b63")
+		)
+		(instances
+			(project ""
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "#PWR12")
 					(unit 1)
 				)
 			)
@@ -4339,6 +5178,74 @@
 			(project ""
 				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 223.52 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b28c6c98-f217-4bc6-b6c5-55da0b2e71d8")
+		(property "Reference" "SW4"
+			(at 223.52 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 223.52 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+			(at 223.52 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 223.52 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a5ac3933-6466-40ca-aec3-45231e5eabf5")
+		)
+		(pin "1"
+			(uuid "c17fea9f-c8f1-459b-87f9-21739a72ada5")
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -4471,6 +5378,137 @@
 			(project "Arduino_Automotive_Ultrasound_Shield_v1"
 				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
 					(reference "#PWR11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 231.14 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8df5235-f5ff-4062-aa4f-c797eed4a6c3")
+		(property "Reference" "#PWR21"
+			(at 237.49 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.95 106.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 231.14 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1cc0b34d-8a7a-450f-87b6-1a7911603f98")
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "#PWR21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 35.56 151.13 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc21474d-5e4a-4f40-b588-0d782e4e7fa9")
+		(property "Reference" "H2"
+			(at 38.1 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 38.1 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 35.56 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 35.56 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -4857,16 +5895,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 265.43 88.9 90)
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 233.68 146.05 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "eead55b5-03ee-4922-be3f-e6eda84a7f89")
-		(property "Reference" "#PWR16"
-			(at 269.24 88.9 0)
+		(uuid "fdd9991b-fa15-4210-941d-02792fcf08a0")
+		(property "Reference" "J1"
+			(at 234.95 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1x4 2.54mm female"
+			(at 234.95 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 233.68 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4874,16 +5929,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 260.35 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 265.43 88.9 0)
+		(property "Datasheet" "~"
+			(at 233.68 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4891,8 +5938,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 265.43 88.9 0)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 233.68 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4900,22 +5947,22 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 265.43 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "88691176-828b-40d7-a3d3-9da6ae7f4f0e")
 		)
 		(pin "1"
-			(uuid "e3ce4b02-e137-4380-8f17-1a11c5ca6d34")
+			(uuid "b9c9f38f-36fa-49d7-aa15-994938e7a1c6")
+		)
+		(pin "4"
+			(uuid "8689e180-8ebb-46aa-95f0-5d38d6a226eb")
+		)
+		(pin "2"
+			(uuid "5172fbd6-65c3-4353-a60e-b40c6c20a284")
 		)
 		(instances
-			(project "Arduino_Automotive_Ultrasound_Shield_v1"
+			(project ""
 				(path "/62dd8c0c-590b-4978-9daf-53008d9cefd2"
-					(reference "#PWR16")
+					(reference "J1")
 					(unit 1)
 				)
 			)
