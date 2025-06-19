@@ -2867,7 +2867,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 109.22) (xy 160.02 109.22)
+			(xy 152.4 106.68) (xy 160.02 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3037,7 +3037,7 @@
 		)
 		(uuid "30994fb2-66d4-4d4b-b2e0-a11ce7381aad")
 	)
-	(label "PB0"
+	(label "PB2"
 		(at 193.04 91.44 180)
 		(effects
 			(font
@@ -3057,7 +3057,7 @@
 		)
 		(uuid "35accac1-16d1-4606-b124-6591fa91027f")
 	)
-	(label "PB2"
+	(label "PB0"
 		(at 193.04 96.52 180)
 		(effects
 			(font
@@ -3118,7 +3118,7 @@
 		(uuid "6b42b418-097b-48f1-9365-5d3801b2306f")
 	)
 	(label "PB3"
-		(at 152.4 109.22 0)
+		(at 152.4 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
