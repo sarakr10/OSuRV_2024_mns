@@ -6,9 +6,18 @@
 #endif
 
 //////////////////
-const int trigPin = 7;
-const int echoPin = 6;
+const int trigPin= A3;
+const int echoPin= 9;
+
+const int trigPin1 = A4;
+const int echoPin1 = A5;
+
+const int trigPin2 = 6;
+const int echoPin2 = 7;
+
 float duration, distance;
+float duration2, distance2;
+float duration1, distance1;
 
 #define PG 2       // INT2
 #define PWM 3      // OC2B
@@ -16,10 +25,10 @@ float duration, distance;
 
 //pinovi tastera za skretanje i ubrzavanje
 
-#define BTN_SERVO_L 9       // skretanje levo (servo)
-#define BTN_SERVO_R 10      // skretanje desno (servo)
-#define BTN_DEC 11          // smanjenje brzine BLDC
-#define BTN_INC 12          // povecanje brzine BLDC
+#define BTN_SERVO_L 12       // skretanje levo (servo)
+#define BTN_SERVO_R A0      // skretanje desno (servo)
+#define BTN_DEC A1          // smanjenje brzine BLDC
+#define BTN_INC A2          // povecanje brzine BLDC
 
 #define LED_DEBUG LED_BUILTIN
 #define SERVO_PIN 8
@@ -92,8 +101,15 @@ bool sensor_active = false;
 
 void setup() {
   Serial.begin(115200); //senzor
-  //pinMode(trigPin, OUTPUT);//
-  //pinMode(echoPin, INPUT);//
+  
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  
+  pinMode(trigPin1, OUTPUT);
+  pinMode(echoPin1, INPUT);
+
+  pinMode(trigPin2, OUTPUT);
+  pinMode(echoPin2, INPUT);
 
   pinMode(LED_DEBUG, OUTPUT);
   digitalWrite(LED_DEBUG, 0);
@@ -132,6 +148,7 @@ void setup() {
 typedef unsigned long millis_t;
 
 void loop() {
+
   static bool prev_inc = false;
   static bool prev_dec = false;
   static bool prev_servo_l = false;
@@ -147,19 +164,46 @@ void loop() {
   bool re_servo_l = curr_servo_l && !prev_servo_l;
   bool re_servo_r = curr_servo_r && !prev_servo_r;
 
-digitalWrite(trigPin, LOW); //senzor
+digitalWrite(trigPin, LOW); //senzor0
 delayMicroseconds(2);
 digitalWrite(trigPin, HIGH);
 delayMicroseconds(10);
 digitalWrite(trigPin, LOW);
 
-Serial.println("Distanca je: ");
-Serial.print(distance);
-  
-duration = pulseIn(echoPin, HIGH);
-distance = (duration*.0343)/2;    //distanca u centimetrima
-if(distance<8){
+digitalWrite(trigPin1, LOW); //senzor1
+delayMicroseconds(2);
+digitalWrite(trigPin1, HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin1, LOW);
+
+digitalWrite(trigPin2, LOW); //senzor2
+delayMicroseconds(2);
+digitalWrite(trigPin2, HIGH);
+delayMicroseconds(10);
+digitalWrite(trigPin2, LOW);
+
+duration= pulseIn(echoPin, HIGH);
+distance= (duration*.0343)/2;    //distanca u centimetrima
+
+
+duration1 = pulseIn(echoPin1, HIGH);
+distance1 = (duration1*.0343)/2;    //distanca u centimetrima
+
+
+duration2 = pulseIn(echoPin2, HIGH);
+distance2 = (duration2*.0343)/2;    //distanca u centimetrima
+
+
+Serial.print("NAPRED: ");
+Serial.println(distance);
+Serial.print("DESNO: ");
+Serial.println(distance1);
+Serial.print("LEVO: ");
+Serial.println(distance2);
+
+if(distance<8 ){
   eff = 0;
+  Serial.println("STOP");
   set_eff(eff);
   sensor_active=true;
 }

@@ -2,8 +2,8 @@
 
 Servo myServo;
 
-const int leftButtonPin = 9;     // Taster za levo
-const int rightButtonPin = 10;   // Taster za desno
+const int leftButtonPin = A1;     // Taster za levo
+const int rightButtonPin = A2;   // Taster za desno
 
 int angle = 0;                   // Trenutni ugao (0–180)
 bool lastLeftState = HIGH;       // Prethodno stanje levog tastera
@@ -30,7 +30,7 @@ void loop() {
       angle = 0;
     }
     myServo.write(angle);
-    Serial.print("Levo → Ugao: ");
+    Serial.print("LEVO");
     Serial.println(angle);
     delay(300);  // debounce
   }
@@ -42,7 +42,7 @@ void loop() {
       angle = 180;
     }
     myServo.write(angle);
-    Serial.print("Desno → Ugao: ");
+    Serial.print("DESNO");
     Serial.println(angle);
     delay(300);  // debounce
   }
