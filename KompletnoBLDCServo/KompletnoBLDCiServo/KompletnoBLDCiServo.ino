@@ -149,67 +149,111 @@ typedef unsigned long millis_t;
 
 void loop() {
 
+// prate prethodno stanje svakok tastera - na pocetku ni jedan nije pritisnut
+// moraju biti static jer se inicijalizuju samo pri prvom prolasku kroz petlju 
+
   static bool prev_inc = false;
   static bool prev_dec = false;
   static bool prev_servo_l = false;
   static bool prev_servo_r = false;
+
+// citanje trenutnog stanja tastera - jer su pull-up digitalRead vrati LOW kada su pritisnuti
 
   bool curr_inc = !digitalRead(BTN_INC);
   bool curr_dec = !digitalRead(BTN_DEC);
   bool curr_servo_l = !digitalRead(BTN_SERVO_L);
   bool curr_servo_r = !digitalRead(BTN_SERVO_R);
 
+//detekcija rising-edge - true ako je taster sada pritisnut i prethodno nije bio
+
   bool re_inc = curr_inc && !prev_inc;
   bool re_dec = curr_dec && !prev_dec;
   bool re_servo_l = curr_servo_l && !prev_servo_l;
   bool re_servo_r = curr_servo_r && !prev_servo_r;
 
-digitalWrite(trigPin, LOW); //senzor0
-delayMicroseconds(2);
-digitalWrite(trigPin, HIGH);
-delayMicroseconds(10);
-digitalWrite(trigPin, LOW);
 
-digitalWrite(trigPin1, LOW); //senzor1
-delayMicroseconds(2);
-digitalWrite(trigPin1, HIGH);
-delayMicroseconds(10);
-digitalWrite(trigPin1, LOW);
+////////// NAPRED /////////////////////////////////////////////////////////////////////////////
+  digitalWrite(trigPin, LOW); //senzor0
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
 
-digitalWrite(trigPin2, LOW); //senzor2
-delayMicroseconds(2);
-digitalWrite(trigPin2, HIGH);
-delayMicroseconds(10);
-digitalWrite(trigPin2, LOW);
+  duration= pulseIn(echoPin, HIGH);
+  distance= (duration*.0343)/2;    //distanca u centimetrima
 
-duration= pulseIn(echoPin, HIGH);
-distance= (duration*.0343)/2;    //distanca u centimetrima
+  Serial.print("NAPRED: ");
+  Serial.println(distance);
 
+  if(distance<8 && distance!=0){
+    eff = 0;
+    Serial.println("STOP");
+    set_eff(eff);
+    sensor_active=true;
+  }
+  else{
+    sensor_active=false;
+  }
 
-duration1 = pulseIn(echoPin1, HIGH);
-distance1 = (duration1*.0343)/2;    //distanca u centimetrima
+  delay(40);
 
+////////// DESNO /////////////////////////////////////////////////////////////////////////////
 
-duration2 = pulseIn(echoPin2, HIGH);
-distance2 = (duration2*.0343)/2;    //distanca u centimetrima
+  digitalWrite(trigPin1, LOW); //senzor1
+  delayMicroseconds(2);
+  digitalWrite(trigPin1, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin1, LOW);
 
+  duration1 = pulseIn(echoPin1, HIGH);
+  distance1 = (duration1*.0343)/2;    //distanca u centimetrima
+  delay(100);
 
-Serial.print("NAPRED: ");
-Serial.println(distance);
-Serial.print("DESNO: ");
-Serial.println(distance1);
-Serial.print("LEVO: ");
-Serial.println(distance2);
+  Serial.print("DESNO: ");
+  Serial.println(distance1);
 
-if(distance<8 ){
-  eff = 0;
-  Serial.println("STOP");
-  set_eff(eff);
-  sensor_active=true;
-}
-else{
-  sensor_active=false;
-}
+  if(distance1<8 ){
+    eff = 0;
+    Serial.println("STOP");
+    set_eff(eff);
+    sensor_active=true;
+  }
+  else{
+    sensor_active=false;
+  }
+
+  delay(40);
+
+////////// LEVO /////////////////////////////////////////////////////////////////////////////
+
+  digitalWrite(trigPin2, LOW); //senzor2
+  delayMicroseconds(2);
+  digitalWrite(trigPin2, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin2, LOW);
+
+  duration2 = pulseIn(echoPin2, HIGH);
+  distance2 = (duration2*.0343)/2;    //distanca u centimetrima
+
+  Serial.print("LEVO: ");
+  Serial.println(distance2);
+
+  if(distance2<8 ){
+    eff = 0;
+    Serial.println("STOP");
+    set_eff(eff);
+    sensor_active=true;
+  }
+  else{
+    sensor_active=false;
+  }
+
+  delay(40);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//ako je aktiviran taster za povecanje/smanjenje brzine, poziva se funcija koja menja brzinu
+//brzina se povecava za EFF_STEP ukoliko je to moguce unutar intervala -100, 100
 
   if(re_inc){
     eff = min(eff + EFF_STEP, 100);
@@ -218,6 +262,7 @@ else{
   }
   set_eff(eff);
 
+//ako je aktiviran taster za skretanje levo/desno, poziva se funkcija za promenu ugla
   if(re_servo_l){
     servo_angle = max(servo_angle - SERVO_STEP, SERVO_MIN_ANGLE);
     servo.write(servo_angle);
